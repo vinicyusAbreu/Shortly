@@ -1,0 +1,873 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 62.5%;
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+        /* border: 1px solid red; */
+    }
+    
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    
+    nav {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        font-size: 3rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .menuContainer {
+        display: flex;
+        width: 85%;
+        justify-content: space-between;
+        align-items: flex-end
+    }
+    
+    .menuUm {
+        width: 30rem;
+    }
+    
+    .menuUm ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .menuUm ul a {
+        text-decoration: none;
+        font-size: 1.6rem;
+        color: hsl(0, 0%, 75%);
+        transition: .2s;
+    }
+    
+    .menuUm ul a:hover {
+        color: hsl(0, 0%, 0%);
+    }
+    
+    .menuDois {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 18rem;
+    }
+    
+    .menuDois a {
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    
+    .login {
+        color: hsl(0, 0%, 75%);
+        transition: .2s;
+    }
+    
+    .login:hover {
+        color: hsl(0, 0%, 0%);
+    }
+    
+    .menu {
+        display: none;
+    }
+    
+    .cadastro {
+        border-radius: 15px;
+        background-color: hsl(180, 66%, 49%);
+        color: hsl(0, 0%, 100%);
+        padding: .3rem 1.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+    }
+    
+    .cadastro:hover {
+        background-color: hsla(180, 66%, 49%, 0.705);
+    }
+    
+    .containerMenu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        z-index: 10000000000000000000;
+        top: 10rem;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+    }
+    
+    .menuMobile {
+        background-color: #35323e;
+        width: 90%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 40px #35323e;
+        animation: showdiv 1s ease-in-out 0s 1 normal forwards;
+        padding-top: 2rem;
+    }
+    
+    .mobile {
+        list-style: none;
+        margin-bottom: 3rem;
+    }
+    
+    .mobile li {
+        margin-top: 2rem;
+    }
+    
+    .mobile li a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+    
+    .mobile li a:hover {
+        color: #2acfcf;
+    }
+    
+    .login-mobile {
+        display: block;
+        margin: 18px 0;
+    }
+    
+    .login-mobile a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: 0.3s;
+    }
+    
+    .login-mobile a:hover {
+        color: #2acfcf;
+    }
+    
+    .btnMobile {
+        color: #ffffff;
+        width: 80%;
+        border-radius: 2rem;
+        padding: 0.8rem;
+        font-weight: bolder;
+        margin-bottom: 4rem;
+        font-size: 1.8rem;
+        background-color: #2acfcf;
+        border: 1px solid #fff;
+        cursor: pointer;
+        outline: none;
+        box-shadow: 0 1px #fff;
+        transition: 0.3s;
+    }
+    
+    hr {
+        width: 85%;
+        margin: auto;
+    }
+    
+    .btnMobile:hover {
+        opacity: 0.9;
+    }
+    
+    .btnMobile:active {
+        box-shadow: 0 0px #fff;
+        transform: translateY(4px);
+        opacity: 1;
+    }
+    
+    main {
+        width: 100%;
+    }
+    
+    .primeiraSecao {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        height: 60rem;
+    }
+    
+    .primeiroArticle {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .descricao {
+        width: 60rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .descricao h1 {
+        font-size: 6rem;
+        color: hsl(255, 11%, 22%);
+    }
+    
+    .descricao p {
+        font-size: 2.2rem;
+        color: hsl(258, 7%, 63%);
+    }
+    
+    .btnStart {
+        text-decoration: none;
+        font-size: 1.8rem;
+        background-color: hsl(180, 66%, 49%);
+        width: 18rem;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 3rem;
+        margin-top: 2rem;
+        color: hsl(0, 0%, 100%);
+        transition: .2s;
+    }
+    
+    .btnStart:hover {
+        background-color: hsla(180, 66%, 49%, 0.705);
+    }
+    
+    .ilustadortrab {
+        height: 33vw;
+    }
+    
+    .caixaInput {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+        position: relative;
+        top: 5rem;
+    }
+    
+    .containerInput {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .containercaixaInput {
+        background-color: hsl(257, 27%, 26%);
+        background-image: url('../images/bg-shorten-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        padding: 3rem;
+        justify-content: space-around;
+        border-radius: 5px;
+        flex-wrap: wrap;
+    }
+    
+    #entradaLink {
+        width: 100%;
+        font-size: 1.8rem;
+        height: 4rem;
+        padding-left: 1.8rem;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+    }
+    
+    #entradaLink:focus {
+        border: 1px solid hsla(180, 66%, 49%, 0.705);
+    }
+    
+    #entradaLink:focus::placeholder {
+        color: hsla(180, 66%, 49%, 0.705);
+    }
+    
+    #btnLink {
+        text-decoration: none;
+        font-size: 1.8rem;
+        background-color: hsl(180, 66%, 49%);
+        width: 16%;
+        height: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: hsl(0, 0%, 100%);
+        transition: .2s;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    #btnLink:hover {
+        background-color: hsla(180, 66%, 49%, 0.705);
+    }
+    
+    .segundaSecao {
+        width: 100%;
+        background-color: hsl(0, 0%, 75%);
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+    
+    .segundoArticle {
+        width: 80%;
+        padding-top: 7rem;
+    }
+    
+    .container {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+        margin-bottom: 1rem;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    .conteinarLinkVelho {
+        width: 70%;
+        padding-right: 1rem;
+    }
+    
+    .conteinarLinkVelho p {
+        font-size: 1.8rem;
+        word-break: break-all;
+    }
+    
+    .conteinarLinkNovo {
+        display: flex;
+        width: 32rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .linkNovo {
+        font-size: 1.8rem;
+        color: hsl(180, 66%, 49%);
+    }
+    
+    .btnCopia {
+        font-size: 1.8rem;
+        border-radius: 5px;
+        background-color: hsl(180, 66%, 49%);
+        color: hsl(0, 0%, 100%);
+        padding: .5rem 2.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .copied {
+        background-color: rgb(59, 48, 84);
+        opacity: 0.7;
+        padding: .5rem 1.8rem;
+    }
+    
+    .btnCopia:hover {
+        background-color: hsla(180, 66%, 49%, 0.705);
+    }
+    
+    .copied:hover {
+        background-color: rgb(59, 48, 84);
+        opacity: 0.8;
+    }
+    
+    .containerDescricaoStatic {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+    
+    .caixaDescricaoStatic {
+        width: 40%;
+        text-align: center;
+    }
+    
+    .caixaDescricaoStatic>h2 {
+        font-size: 3.5rem;
+        color: hsl(0, 0%, 20%);
+    }
+    
+    .caixaDescricaoStatic>p {
+        font-size: 1.5rem;
+        color: hsl(258, 7%, 63%);
+    }
+    
+    .estatisticas {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        padding-top: 5rem;
+        padding-bottom: 8rem;
+    }
+    
+    .stats {
+        width: 40%;
+        background-color: hsl(0, 0%, 100%);
+        padding: 1.8rem;
+        text-align: left;
+        border-radius: 5px;
+    }
+    
+    .stats h3 {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+        color: hsl(260, 8%, 14%);
+        padding-top: 2.5rem;
+    }
+    
+    .stats p {
+        font-size: 1.6rem;
+        color: hsl(258, 7%, 63%);
+    }
+    
+    .brand-img {
+        background-color: hsl(258, 27%, 26%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        position: absolute;
+        top: 2.5rem;
+    }
+    
+    .brand-img img {
+        height: 3rem;
+    }
+    
+    .primeiro-stat {
+        align-self: flex-start;
+    }
+    
+    .segundo-stat {
+        margin-top: 3rem;
+        padding-bottom: -2rem;
+        align-self: flex-start;
+    }
+    
+    .segundo-stat .brand-img {
+        top: 5.5rem;
+    }
+    
+    .terceiro-stat {
+        margin-top: 6rem;
+        align-self: flex-start;
+    }
+    
+    .terceiro-stat .brand-img {
+        top: 8.5rem;
+    }
+    
+    .progresso {
+        width: 6rem;
+        height: 2rem;
+        background-color: hsl(180, 66%, 49%);
+        align-self: center;
+    }
+    
+    .terceiraSecao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: hsl(257, 27%, 26%);
+        background-image: url('../images/bg-boost-desktop.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2rem 0;
+        padding-bottom: 3rem;
+    }
+    
+    .terceiraSecao h2 {
+        color: hsl(0, 0%, 100%);
+        font-size: 3.5rem;
+    }
+    
+    footer {
+        background: black;
+        color: #fff;
+        padding: 40px 0 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .containerFooter {
+        width: 85%;
+    }
+    
+    footer .containerFooter {
+        display: grid;
+        grid-template-columns: 1.8fr 1fr 1fr 1fr 0.7fr;
+        margin-bottom: 30px;
+    }
+    
+    footer li {
+        margin-bottom: 5px;
+        font-size: 15.5px;
+        cursor: pointer;
+        transition: .2s;
+        width: 12rem;
+        list-style: none;
+    }
+    
+    footer li:hover {
+        color: hsl(180, 66%, 49%);
+    }
+    
+    .diff {
+        margin-bottom: 15px;
+        font-weight: 700;
+    }
+    
+    .icons {
+        padding-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .icons i {
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    
+    i:hover {
+        color: hsl(180, 66%, 49%);
+        transition: .2s;
+    }
+    
+    .erro {
+        font-size: 1.8rem;
+        font-weight: 700;
+        display: block;
+        color: hsl(0, 87%, 67%);
+        width: 98%;
+        margin-top: 1rem;
+        transition: .3s;
+    }
+    
+    .hidden {
+        display: none !important;
+        transition: 0.3s;
+    }
+    
+    .borderErro {
+        border: 1px solid hsl(0, 87%, 67%)!important;
+        transition: .3s;
+    }
+    
+    .borderErro::placeholder {
+        color: hsl(0, 87%, 67%);
+    }
+    
+    @media (max-width:1125px) {
+        .menuContainer {
+            width: 80%;
+        }
+        .conteinarLinkNovo {
+            width: 40%;
+        }
+        .conteinarLinkVelho {
+            width: 60%;
+        }
+    }
+    
+    @media (max-width:1060px) {
+        .conteinarLinkNovo {
+            width: 42%;
+        }
+    }
+    
+    @media (max-width:1030px) {
+        .container {
+            flex-direction: column;
+            padding: 0;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        .conteinarLinkVelho {
+            padding-left: 3rem;
+            width: 100%;
+        }
+        .conteinarLinkVelho p {
+            padding-bottom: 1rem;
+            border-bottom: 1px solid hsl(0, 0%, 75%);
+        }
+        .conteinarLinkNovo {
+            flex-direction: column;
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .linkNovo {
+            width: 100%;
+            padding-left: 3rem;
+            margin-bottom: 1rem;
+        }
+        .btnCopia {
+            width: 90%;
+        }
+    }
+    
+    @media (max-width:950px) {
+        .icons {
+            font-size: 1rem;
+        }
+    }
+    
+    @media (max-width:830px) {
+        #btnLink {
+            width: 18%;
+        }
+    }
+    
+    @media (max-width:800px) {
+        * {
+            overflow: visible;
+        }
+        header {
+            background-color: #ffffff;
+            position: fixed;
+            z-index: 10000000000000000;
+            top: 0;
+            margin: 0;
+            padding: 1rem;
+        }
+        .containerMenu {
+            display: flex;
+        }
+        .primeiraSecao {
+            margin-top: 20rem;
+        }
+        .containerInput {
+            width: 100%;
+        }
+        .menuContainer {
+            width: 66vw;
+            display: none;
+        }
+        .erro {
+            justify-self: center;
+            margin-top: -2rem;
+        }
+        .menu {
+            display: block;
+            font-size: 3rem;
+            cursor: pointer;
+            color: hsl(0, 0%, 75%);
+        }
+        .menu:hover {
+            color: hsl(0, 0%, 75%);
+        }
+        .primeiroArticle {
+            flex-direction: column-reverse;
+        }
+        .descricao {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .ilustadortrab {
+            width: 100%;
+            height: 100%;
+        }
+        .containerIMG {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .containercaixaInput {
+            flex-direction: column;
+            position: relative;
+        }
+        .erro {
+            position: absolute;
+            z-index: 1000;
+            bottom: 7rem;
+            left: 3rem;
+            font-size: 1.6rem;
+        }
+        #entradaLink {
+            width: 100%;
+            margin-bottom: 1.5rem;
+        }
+        #btnLink {
+            width: 100%;
+            margin-top: 1rem;
+        }
+        .caixaDescricaoStatic {
+            width: 100%;
+        }
+        .estatisticas {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .primeiro-stat {
+            align-self: center;
+        }
+        .segundo-stat {
+            margin: 0;
+            align-self: center;
+        }
+        .terceiro-stat {
+            margin: 0;
+            align-self: center;
+        }
+        .stats {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .primeiro-stat .brand-img {
+            position: relative;
+            top: -4rem;
+        }
+        .segundo-stat .brand-img {
+            position: relative;
+            top: -4rem;
+        }
+        .terceiro-stat .brand-img {
+            position: relative;
+            top: -4rem;
+        }
+        .brand-img {
+            position: static;
+            top: 0em;
+        }
+        .progresso {
+            width: 2rem;
+            height: 6rem;
+            align-self: center;
+        }
+        .stats h3 {
+            margin-top: -5rem;
+        }
+        footer .containerFooter {
+            text-align: center;
+            grid-template-columns: unset;
+            grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+            width: 60%;
+            margin: auto;
+        }
+        .containerFooter {
+            justify-content: center;
+        }
+        .icons {
+            width: 100%;
+            align-items: center;
+        }
+    }
+    
+    @media(max-width:680px) {
+        .primeiraSecao {
+            justify-content: center;
+            margin-top: 5rem;
+        }
+        .primeiroArticle {
+            width: 90%;
+        }
+        .descricao {
+            width: 100%;
+        }
+        .descricao h1 {
+            font-size: 5rem;
+        }
+        .descricao p {
+            font-size: 2rem;
+        }
+    }
+    
+    @media(max-width:420px) {
+        .primeiroArticle {
+            justify-content: center;
+            margin-top: -5rem;
+        }
+        .containerIMG {
+            margin-bottom: 2rem;
+            width: 35rem;
+        }
+        .descricao h1 {
+            font-size: 3.5rem;
+        }
+        .descricao p {
+            font-size: 1.8rem;
+        }
+        .containercaixaInput {
+            background-image: url(../images/bg-shorten-mobile.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 90%;
+        }
+        .container {
+            width: 100%;
+        }
+        .segundoArticle {
+            width: 90%;
+        }
+        .terceiraSecao h2 {
+            color: hsl(0, 0%, 100%);
+            font-size: 2.5rem;
+        }
+        .conteinarLinkVelho p {
+            font-size: 1.6rem;
+        }
+        .linkNovo {
+            font-size: 1.6rem;
+        }
+        .btnCopia {
+            font-size: 1.6rem;
+        }
+        .caixaDescricaoStatic>h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .caixaInput {
+            top: 4rem;
+        }
+        .segundaSecao {
+            padding-top: 2rem;
+            margin-top: -4rem;
+        }
+        .terceiraSecao {
+            background-image: url('../images/bg-boost-mobile.svg');
+        }
+    }
+    
+    @media(max-width:320px) {
+        .containerIMG {
+            margin-bottom: 2rem;
+            width: 100vw;
+        }
+        .terceiraSecao h2 {
+            font-size: 2.2rem;
+        }
+    }
+    
+    .fa-circle-o-notch {
+        font-size: 2.5rem;
+        display: block;
+    }

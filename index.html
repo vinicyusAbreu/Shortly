@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortly</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <span class="logo">
+                <img src="./images/logo.svg" alt="">
+            </span>
+
+            <div class="menuContainer">
+
+                <span class="menuUm">
+                    <ul>
+                        <li>
+                            <a href="#">Feature</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Resources</a>
+                        </li>
+                    </ul>
+                </span>
+
+                <span class="menuDois">
+                    
+                            <a class="login" href="#">Login</a>
+                       
+                      
+                            <a class="cadastro" href="#">Sing up</a>
+                </span>
+            </div>
+            <i class="fas fa-bars menu"></i>
+
+
+            <div class="containerMenu hidden">
+                <div class="menuMobile">
+                    <ul class="mobile">
+                        <li>
+                            <a href="#">Features</a>
+
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+
+                        </li>
+                        <li>
+                            <a href="#">Resources</a>
+
+                        </li>
+                    </ul>
+                    <hr>
+                    <span class="login-mobile">
+                            <a href="#">Login</a>
+                     </span>
+                    <button class="btnMobile">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="primeiraSecao">
+            <article class="primeiroArticle">
+
+                <div class="descricao">
+                    <h1>More than just shorter links</h1>
+                    <p>Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+                    <a href="#" class="btnStart">Get Started</a>
+                </div>
+
+                <div class="containerIMG">
+                    <img class="ilustadortrab" src="./images/illustration-working.svg" alt="">
+                </div>
+            </article>
+        </section>
+
+
+        <section class="caixaInput">
+
+            <div class="containercaixaInput">
+                <div class="containerInput">
+                    <input id="entradaLink" type="text" placeholder='Shorten a link here...'>
+
+                </div>
+                <button id="btnLink"> 
+                    Shorten It!
+                   
+                </button>
+                <p class='erro hidden'></p>
+
+            </div>
+
+
+        </section>
+
+        <section class="segundaSecao">
+
+            <article class="segundoArticle">
+
+
+
+                <div class="containerDescricaoStatic">
+                    <span class="caixaDescricaoStatic">
+                        <h2>Advanced Statistics</h2>
+                        <p>Track how your links are performing across the web with our advanced statistics dashboard.</p>
+                    </span>
+                </div>
+
+
+
+
+                <div class="estatisticas">
+
+                    <div class="stats primeiro-stat" data-aos="fade-up">
+                        <div class="brand-img">
+                            <img src="./images/icon-brand-recognition.svg" alt="">
+                        </div>
+                        <h3>Brand Recognition</h3>
+                        <p>Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+                    </div>
+
+                    <span class="progresso"></span>
+
+                    <div class="stats segundo-stat" data-aos="fade-up" data-aos-delay="50">
+                        <div class="brand-img">
+                            <img src="./images/icon-detailed-records.svg" alt="">
+                        </div>
+                        <h3>Detailed Records</h3>
+                        <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+                    </div>
+
+                    <span class="progresso"></span>
+
+                    <div class="stats terceiro-stat" data-aos="fade-up" data-aos-delay="100">
+                        <div class="brand-img">
+                            <img src="./images/icon-fully-customizable.svg" alt="">
+                        </div>
+                        <h3>Fully Customizable</h3>
+                        <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+        <section class="terceiraSecao">
+
+            <h2>Boost your links today</h2>
+            <a href="#" class="btnStart">Get Started</a>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+
+        <div class="containerFooter">
+            <div class="footer-logo">
+                <img src="./images/logo.svg" alt="">
+            </div>
+            <div class="foot1">
+                <ul>
+                    <li class="diff">Features</li>
+                    <li>Link Shortening</li>
+                    <li>Branded Links</li>
+                    <li>Analytics</li>
+                </ul>
+            </div>
+
+            <div class="foot2">
+                <ul>
+                    <li class="diff">Resources</li>
+                    <li>Blog</li>
+                    <li>Developers</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+
+            <div class="foot3">
+                <ul>
+                    <li class="diff">Company</li>
+                    <li>About</li>
+                    <li>Our Team</li>
+                    <li>Careers</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <div class="icons">
+
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-pinterest"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="js/app.js" async defer type="module"></script>
+</body>
+
+</html>
